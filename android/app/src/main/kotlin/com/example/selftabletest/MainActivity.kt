@@ -1,4 +1,4 @@
-package com.example.selftabletest
+package com.selftabletest
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1021422437892",
+    "project_id": "selftabeltest",
+    "storage_bucket": "selftabeltest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021422437892:android:62a88081946c758b151751",
+        "android_client_info": {
+          "package_name": "com.selftabletest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021422437892-qh9o6t1j39n122dhsr7kv2vhpde64sha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlG80ijlprpklMHoV7COOnNa6mrPHftX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021422437892-qh9o6t1j39n122dhsr7kv2vhpde64sha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

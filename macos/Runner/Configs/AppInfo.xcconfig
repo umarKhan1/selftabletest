@@ -8,7 +8,7 @@
 PRODUCT_NAME = selftabletest
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.selftabletest
+PRODUCT_BUNDLE_IDENTIFIER = com.selftabletest
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2022 com.example. All rights reserved.
