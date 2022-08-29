@@ -27,7 +27,8 @@ class Homeview extends StatelessWidget {
                 SizedBox(
                   height: 2.6 * mediaSize.height / 100,
                 ),
-                const FeaturedVerticalList(), //Featured List has Sepreated widget
+                FeaturedVerticalList(
+                    status: "feature"), //Featured List has Sepreated widget
                 SizedBox(
                   height: 4.2 * mediaSize.height / 100,
                 ),
@@ -36,7 +37,9 @@ class Homeview extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w700, fontSize: 34),
                 ),
 
-                const AllCatsVerticatList(), //AllCats List has Sepreated widget
+                FeaturedVerticalList(
+                  status: "",
+                ), //AllCats List has Sepreated widget
               ],
             ),
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:selftabletest/providers/d.dart';
 import 'package:selftabletest/providers/featuredprovider.dart';
 import 'package:selftabletest/views/bottom_novigation.dart';
 import 'package:selftabletest/views/home/core/home_view_import.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         title: 'Selftabletest',
         theme: ThemeData(
             primaryColor: const Color(0xffE0E0E0), fontFamily: "Roboto"),
-        home: const BottomScreen(),
+        home: BottomScreen(),
         onGenerateRoute: (setting) {
           WidgetBuilder builder = (context) => const BottomScreen();
           switch (setting.name) {

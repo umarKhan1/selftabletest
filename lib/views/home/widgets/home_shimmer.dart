@@ -13,8 +13,8 @@ Widget homeShimmer(BuildContext context) {
             child: Shimmer.fromColors(
               baseColor: const Color(0xffE0E0E0).withOpacity(0.2),
               highlightColor: Color(0xffE0E0E0),
-              enabled: false,
-              period: const Duration(seconds: 1),
+              enabled: true,
+              period: const Duration(seconds: 10),
               child: Container(
                 height: 13.2 * mediaSize.height / 100,
                 width: 91 * mediaSize.width / 100,
