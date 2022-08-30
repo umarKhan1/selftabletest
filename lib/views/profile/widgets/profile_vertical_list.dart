@@ -87,7 +87,9 @@ class ProfileVerticalList extends StatelessWidget {
                                               listen: false)
                                           .deleteNode(
                                               docid: snapshot.data!.docs[index]
-                                                  ['docid']);
+                                                  ['docid'],
+                                              collection: snapshot.data!
+                                                  .docs[index]['collection']);
                                     },
                                     child: const Text(
                                       ApplicationStrings.removeString,

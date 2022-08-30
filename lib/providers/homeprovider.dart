@@ -16,6 +16,7 @@ class FeaturedListProvider extends ChangeNotifier {
     if (status == true) {
       FirebaseFirestore.instance.collection("selecteddata").doc(docid).set({
         "docid": docid,
+        "collection": collection,
         "imgurl": imgurl,
         "title": title,
         "subtitle": subtitle
