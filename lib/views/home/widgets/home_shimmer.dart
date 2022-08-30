@@ -12,7 +12,7 @@ Widget homeShimmer(BuildContext context) {
             padding: const EdgeInsets.only(bottom: 10.0),
             child: Shimmer.fromColors(
               baseColor: const Color(0xffE0E0E0).withOpacity(0.2),
-              highlightColor: Color(0xffE0E0E0),
+              highlightColor: const Color(0xffE0E0E0),
               enabled: true,
               period: const Duration(seconds: 10),
               child: Container(
@@ -21,8 +21,8 @@ Widget homeShimmer(BuildContext context) {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(16),
                     color: Colors.white),
-                child: Center(
-                  child: Text("sdsdsdsdsd"),
+                child: const Center(
+                  child: Text("SomeThing Loading"),
                 ),
               ),
             ),

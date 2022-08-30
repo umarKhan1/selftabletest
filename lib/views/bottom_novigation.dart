@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:selftabletest/views/profile/profile_imports.dart';
+import 'package:selftabletest/views/profile/core/profile_imports.dart';
 
 import '../utils/application_color.dart';
 import 'home/core/home_view_import.dart';
@@ -16,7 +16,6 @@ class BottomScreen extends StatefulWidget {
 
 class _BottomScreenState extends State<BottomScreen> {
   int currentNav = 0;
-
   static final List<Widget> _pages = <Widget>[
     const Homeview(),
     const ProfileView()
@@ -29,7 +28,7 @@ class _BottomScreenState extends State<BottomScreen> {
           //the return value will be from "Yes" or "No" options
           context: context,
           builder: (context) => AlertDialog(
-            title: const Text('PREMED GO'),
+            title: const Text('Alert'),
             content: const Text('Aye You Sure, You Want to exit?'),
             actions: [
               ElevatedButton(
@@ -83,14 +82,10 @@ class _BottomScreenState extends State<BottomScreen> {
               backgroundColor: Colors.transparent,
               selectedItemColor:
                   ButtonGradientColor.bottomnavigationselectedColor,
-
               showUnselectedLabels: true,
               showSelectedLabels: true,
               type: BottomNavigationBarType.fixed,
-              // selectedLabelStyle: const TextStyle(color: Colors.white),
-              // unselectedLabelStyle: const TextStyle(color: Colors.white),
               currentIndex: currentNav,
-
               items: [
                 BottomNavigationBarItem(
                     label: "Cats",

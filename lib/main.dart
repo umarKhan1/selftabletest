@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:selftabletest/providers/d.dart';
-import 'package:selftabletest/providers/featuredprovider.dart';
+import 'package:selftabletest/providers/homeprovider.dart';
+import 'package:selftabletest/providers/profileprovider.dart';
 import 'package:selftabletest/views/bottom_novigation.dart';
 import 'package:selftabletest/views/home/core/home_view_import.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -20,13 +20,15 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<FeaturedListProvider>(
             create: (_) => FeaturedListProvider()),
+        ChangeNotifierProvider<ProfileProvider>(
+            create: (_) => ProfileProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Selftabletest',
         theme: ThemeData(
             primaryColor: const Color(0xffE0E0E0), fontFamily: "Roboto"),
-        home: BottomScreen(),
+        home: const BottomScreen(),
         onGenerateRoute: (setting) {
           WidgetBuilder builder = (context) => const BottomScreen();
           switch (setting.name) {

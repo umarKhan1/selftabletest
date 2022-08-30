@@ -1,7 +1,6 @@
-class AllCatModel {
+class ProfiledataList {
   String? image;
-  String? title;
-  String? subtitle;
-  AllCatModel(
-      {required this.title, required this.image, required this.subtitle});
+  String? age;
+  String? name;
+  ProfiledataList({required this.age, required this.image, required this.name});
 }
